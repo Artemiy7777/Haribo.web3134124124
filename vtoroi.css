@@ -1,0 +1,59 @@
+.moving-planet{
+    background: url(https://th.bing.com/th/id/OIP.7t5-_EzKpFz5HNXUTlzfhAHaHa?w=208&h=208&c=7&r=0&o=5&pid=1.7);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+@keyframes planet-move {
+    from{transform: translateY(0px);}
+    to {transform: translateY(70px);}
+}
+
+.moving-planet{
+    animation-name: planet-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.works-block img{
+    margin: 0 20px;
+    width: 27%;
+    box-shadow: 
+      7px 7px 0 #000000;
+}
+.comments-block{
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
+}
+.comment-card{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+.comment-card h3{
+    font-size: 18px;
+    font-family: "Comfortaa";
+    padding: 10px 20px;
+    text-align: center;
+    
+
+}
+.comment-card p{
+    font-size: 14px;
+    font-family: "Comfortaa", sans-serif;;
+    padding: 10px 20px;
+    text-align: center;
+}
